@@ -53,14 +53,12 @@ export default function PoliticaDePrivacidade() {
               </p>
 
               <h2 className="text-2xl font-medium mb-4">2. Uso das Informações</h2>
-              <p className="text-[#735B43] text-lg mb-6">
-                As informações coletadas são utilizadas para:
-                <ul className="list-disc list-inside mt-2">
-                  <li>Entrar em contato com você para responder a solicitações.</li>
-                  <li>Melhorar nossos serviços e sua experiência no site.</li>
-                  <li>Enviar comunicações relacionadas aos nossos serviços, caso você tenha consentido.</li>
-                </ul>
-              </p>
+              <p className="text-[#735B43] text-lg mb-6">As informações coletadas são utilizadas para:</p>
+              <ul className="list-disc list-inside mt-2 text-[#735B43] text-lg mb-6">
+                <li>Entrar em contato com você para responder a solicitações.</li>
+                <li>Melhorar nossos serviços e sua experiência no site.</li>
+                <li>Enviar comunicações relacionadas aos nossos serviços, caso você tenha consentido.</li>
+              </ul>
 
               <h2 className="text-2xl font-medium mb-4">3. Compartilhamento de Informações</h2>
               <p className="text-[#735B43] text-lg mb-6">
@@ -86,18 +84,11 @@ export default function PoliticaDePrivacidade() {
                 página regularmente para se manter informado sobre nossas práticas.
               </p>
 
-              <h2 className="text-2xl font-medium mb-4">7. Contato</h2>
-              <p className="text-[#735B43] text-lg mb-8">
-                Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco pelo e-mail{" "}
-                <a href="mailto:contatomarcosdgomes@gmail.com" className="text-[#583B1F] underline">
-                  contatomarcosdgomes@gmail.com
-                </a>{" "}
-                ou pelo telefone <span className="text-[#583B1F]">+55 (85) 98601-3431</span>.
-              </p>
+              
 
               <Link
                 href="/"
-                className="inline-flex items-center px-6 py-3 bg-[#583B1F] text-[#F8F5F0] hover:bg-[#735B43] transition-colors duration-300 rounded-md"
+                className="inline-flex items-center px-6 py-3 bg-[#583B1F] text-[#F8F5F0] hover:bg-[#735B43] transition-colors duration-300 rounded-md mb-8"
               >
                 <ArrowLeft className="mr-2 h-5 w-5" />
                 Voltar para a página inicial
@@ -121,7 +112,7 @@ export default function PoliticaDePrivacidade() {
               />
             </div>
             <div className="text-sm text-center md:text-right">
-              <p>Psicoterapia humanizada e acolhedora</p>
+              <p>Psicoterapia humanizada</p>
               <p className="mt-1">contatomarcosdgomes@gmail.com | +55 (85) 98601-3431</p>
             </div>
           </div>
@@ -130,4 +121,3 @@ export default function PoliticaDePrivacidade() {
     </div>
   );
 }
-

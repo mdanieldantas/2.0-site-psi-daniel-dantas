@@ -1,8 +1,13 @@
 "use client"
 
 import type React from "react"
-
 import { useEffect, useCallback } from "react"
+
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void
+  }
+}
 
 interface AnalyticsEventTrackerProps {
   children: React.ReactNode
@@ -48,7 +53,7 @@ export default function AnalyticsEventTracker({ children }: AnalyticsEventTracke
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const sectionId = entry.target.getAttribute("id")
-            trackEvent("Engagement", "Section_View", sectionId)
+            trackEvent("Engagement", "Section_View", sectionId || "Unknown Section")
           }
         })
       },
@@ -74,4 +79,3 @@ export default function AnalyticsEventTracker({ children }: AnalyticsEventTracke
 
   return <>{children}</>
 }
-

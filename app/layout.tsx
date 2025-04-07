@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import CookieConsent from "@/components/cookie-consent"; // Client Component
+import Analytics from "@/components/analytics"; // Import do componente Analytics
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,11 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Psicoterapia online humanizada e acolhedora com Daniel Dantas. Atendimento em português para ansiedade, depressão, autoconhecimento, saúde mental, terapia online e bem-estar emocional. Psicólogo online para brasileiros no exterior."
+          content="Psicoterapia online humanizada e acolhedora com Daniel Dantas. Atendimento em português para ansiedade, depressão, autoconhecimento, saúde mental, terapia online e bem-estar emocional. Abordagem centrada na pessoa, ACP, focalização, mindfulness, psicólogo clínico, psicólogo rogeriano e mais."
+        />
+        <meta
+          name="keywords"
+          content="terapia, terapeuta perto de mim, terapia cognitiva comportamental, psicólogo perto de mim, psicoterapia, aconselhamento perto de mim, encontre um terapeuta, psicoterapeuta perto de mim, abordagem centrada na pessoa, ACP, focalização, mindfulness, psicólogo clínico, clínica, psicólogo rogeriano, Rogers"
         />
 
         {/* Meta Tags Open Graph */}
@@ -39,7 +44,7 @@ export default function RootLayout({
         <meta name="twitter:image" content="/Daniel-Dantas-logo-footer-correta.png" />
         <meta name="twitter:creator" content="@psidanieldantas" />
 
-        {/* Favicon e Ícones */}
+        {/* Favicon e Ícones descomentar quando fizer upload das imagens
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
         <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
@@ -57,9 +62,13 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
+        */}
 
         {/* Link Canônico */}
         <link rel="canonical" href="https://psicologodanieldantas.com/" />
+
+        {/* Componente Analytics */}
+        <Analytics />
       </head>
       <body className={inter.className}>
         <ThemeProvider
@@ -77,11 +86,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-
-
-import './globals.css'
-
-export const metadata = {
-      generator: 'v0.dev'
-    };

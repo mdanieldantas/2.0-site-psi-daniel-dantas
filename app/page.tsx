@@ -540,7 +540,7 @@ export default function LandingPage() {
                 Eu posso te ajudar na travessia de demandas como:
               </h3>
               <p className="text-[#735B43] text-center mb-12 max-w-3xl mx-auto">
-                Utilizando a Abordagem Centrada na Pessoa (ACP) e a Focalização, ofereço um espaço seguro e acolhedor
+                Utilizando a Abordagem Centrada na Pessoa (ACP) e a Focalização, ofereço um espaço seguro
                 para que você possa explorar suas emoções, superar desafios e encontrar caminhos para uma vida mais
                 equilibrada e significativa.
               </p>
@@ -1171,7 +1171,7 @@ export default function LandingPage() {
                 />
               </div>
               <p className="text-sm mb-6">
-                Psicoterapia humanizada e acolhedora para ajudar você em sua jornada de autoconhecimento e bem-estar
+                Psicoterapia humanizada  para ajudar você em sua jornada de autoconhecimento e bem-estar
                 emocional.
               </p>
               <div className="flex space-x-4">
